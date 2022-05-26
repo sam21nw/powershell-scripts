@@ -1,0 +1,7 @@
+# Powershell scripts
+
+# rename folders or files in a folder
+Dir | Rename-Item -NewName {$_.name -replace "filexx", "test"}
+
+# get child items in folder
+gci -Path 'E:\C#\Check Folder\*' -Include *.xlsx
